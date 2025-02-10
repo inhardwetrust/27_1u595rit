@@ -2,6 +2,9 @@ USBX/App/app_usbx_device.o: ../USBX/App/app_usbx_device.c \
  ../USBX/App/app_usbx_device.h \
  ../Middlewares/ST/usbx/common/core/inc/ux_api.h \
  ../Middlewares/ST/usbx/ports/generic/inc/ux_port.h ../USBX/App/ux_user.h \
+ ../Middlewares/ST/threadx/common/inc/tx_api.h \
+ ../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h \
+ ../Core/Inc/tx_user.h \
  ../Middlewares/ST/usbx/common/core/inc/ux_utility.h \
  ../Middlewares/ST/usbx/common/core/inc/ux_system.h \
  ../USBX/App/ux_device_cdc_acm.h \
@@ -30,15 +33,21 @@ USBX/App/app_usbx_device.o: ../USBX/App/app_usbx_device.c \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_flash_ex.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pwr.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pwr_ex.h \
+ ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_tim.h \
+ ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_tim_ex.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pcd.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_ll_usb.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pcd_ex.h \
  ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h \
+ ../AZURE_RTOS/App/app_azure_rtos_config.h \
  ../Middlewares/ST/usbx/common/usbx_stm32_device_controllers/ux_dcd_stm32.h
 ../USBX/App/app_usbx_device.h:
 ../Middlewares/ST/usbx/common/core/inc/ux_api.h:
 ../Middlewares/ST/usbx/ports/generic/inc/ux_port.h:
 ../USBX/App/ux_user.h:
+../Middlewares/ST/threadx/common/inc/tx_api.h:
+../Middlewares/ST/threadx/ports/cortex_m33/gnu/inc/tx_port.h:
+../Core/Inc/tx_user.h:
 ../Middlewares/ST/usbx/common/core/inc/ux_utility.h:
 ../Middlewares/ST/usbx/common/core/inc/ux_system.h:
 ../USBX/App/ux_device_cdc_acm.h:
@@ -68,8 +77,11 @@ USBX/App/app_usbx_device.o: ../USBX/App/app_usbx_device.c \
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_flash_ex.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pwr.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pwr_ex.h:
+../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_tim.h:
+../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_tim_ex.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pcd.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_ll_usb.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_pcd_ex.h:
 ../Drivers/STM32U5xx_HAL_Driver/Inc/stm32u5xx_hal_exti.h:
+../AZURE_RTOS/App/app_azure_rtos_config.h:
 ../Middlewares/ST/usbx/common/usbx_stm32_device_controllers/ux_dcd_stm32.h:
