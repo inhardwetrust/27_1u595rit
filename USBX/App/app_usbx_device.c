@@ -190,7 +190,7 @@ UINT MX_USBX_Device_Init(VOID *memory_ptr)
 static VOID app_ux_device_thread_entry(ULONG thread_input)
 {
   /* USER CODE BEGIN app_ux_device_thread_entry */
-  TX_PARAMETER_NOT_USED(thread_input);
+ // TX_PARAMETER_NOT_USED(thread_input);
   /* USER CODE END app_ux_device_thread_entry */
 }
 

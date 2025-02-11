@@ -44,6 +44,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+extern PCD_HandleTypeDef hpcd_USB_OTG_HS;
 
 /* USER CODE END PV */
 
@@ -157,7 +158,7 @@ VOID tx_application_define(VOID *first_unused_memory)
       /* USER CODE END  MX_USBX_Device_Init_Error */
     }
     /* USER CODE BEGIN  MX_USBX_Device_Init_Success */
-
+    HAL_PCD_Start(&hpcd_USB_OTG_HS);
     /* USER CODE END  MX_USBX_Device_Init_Success */
   }
 
